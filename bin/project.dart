@@ -4,7 +4,29 @@ import 'package:project/project.dart' as project;
 //   print('Hello world: ${project.calculate()}!');
 // }
 
+class Student{
+
+  var StudentName;
+  var StudentAge;
+  var StudnetSalary;
+
+  showInformation(){
+    print("Name : $StudentName");
+    print("Age : $StudentAge");
+    print("Salary: $StudnetSalary");
+  }
+
+}
+
 main() {
+
+  Student stu = Student();
+  stu.StudentName='Samnang';
+  stu.StudentAge=23;
+  stu.StudnetSalary= 1000;
+
+  stu.showInformation();
+
 
   // final Name = "Dara"; // one time value assign
   // int i = 10 ;
@@ -51,40 +73,44 @@ main() {
   // print ( a ?? 40 ); // if a = null a ng yk 40 print mk
 
   //Control Flow
+  //
+  // int a = 20;
+  // int b = 40;
+  //
+  // if ( a > b ) {
+  //   print("A is bigger than b ");
+  // } else if ( a < 20){
+  //   print ("B is bigger than A ");
+  // } else {
+  //   print ("Hello World ");
+  // }
+  //
+  // String as = "Hello";
+  //
+  // switch ( as ) {
+  //   case "Hello" :
+  //     print("B sl o ");
+  //   case " loading " :
+  //     print("it loading");
+  //   case " error " :
+  //     print("it is error ");
+  // }
+  //
+  // // for loop
+  // for ( int i =0; i<5 ; i++) {
+  //   print ("Hello people $i");
+  // }
+  //
+  // // for in Loop
+  //
+  // var z = [1,2,3,4,5,6];
+  // for (var f in z) {
+  //   print(f);
+  // }
 
-  int a = 20;
-  int b = 40;
 
-  if ( a > b ) {
-    print("A is bigger than b ");
-  } else if ( a < 20){
-    print ("B is bigger than A ");
-  } else {
-    print ("Hello World ");
-  }
 
-  String as = "Hello";
-
-  switch ( as ) {
-    case "Hello" :
-      print("B sl o ");
-    case " loading " :
-      print("it loading");
-    case " error " :
-      print("it is error ");
-  }
-
-  // for loop
-  for ( int i =0; i<5 ; i++) {
-    print ("Hello people $i");
-  }
-
-  // for in Loop
-
-  var z = [1,2,3,4,5,6];
-  for (var f in z) {
-    print(f);
-  }
+    // print(project.calculate(20, 30)); // call function
 
 
 
