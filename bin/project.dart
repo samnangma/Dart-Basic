@@ -52,6 +52,40 @@ main() {
 
   //Control Flow
 
+  int a = 20;
+  int b = 40;
+
+  if ( a > b ) {
+    print("A is bigger than b ");
+  } else if ( a < 20){
+    print ("B is bigger than A ");
+  } else {
+    print ("Hello World ");
+  }
+
+  String as = "Hello";
+
+  switch ( as ) {
+    case "Hello" :
+      print("B sl o ");
+    case " loading " :
+      print("it loading");
+    case " error " :
+      print("it is error ");
+  }
+
+  // for loop
+  for ( int i =0; i<5 ; i++) {
+    print ("Hello people $i");
+  }
+
+  // for in Loop
+
+  var z = [1,2,3,4,5,6];
+  for (var f in z) {
+    print(f);
+  }
+
 
 
 
