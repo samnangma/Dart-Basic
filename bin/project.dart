@@ -1,6 +1,4 @@
 import 'dart:core';
-
-
 import 'package:project/project.dart' as project;
 
 // void main(List<String> arguments) {
@@ -48,6 +46,8 @@ class Student{
 }
 
 main() {
+
+
 
   // Student stu = Student();
   // stu.StudentName='Samnang';
@@ -100,8 +100,6 @@ main() {
   //
   // print(g);
 
-
-
   var evenList =[2,4,6,7,8,9];
   print("This is List $evenList");
   // evenList.add(1); // can add only one value in to list
@@ -124,16 +122,6 @@ main() {
   removeList1.removeAt(2); // Remove by index
   print("List After remove the value $removeList1");
 
-
-
-
-
-
-
-
-
-
-
   // final Name = "Dara"; // one time value assign
   // int i = 10 ;
   // double money = 200.4;
@@ -154,7 +142,6 @@ main() {
   // print('Hello World: $i ');
   // print('Money $money $score');
   // print("Name $name");
-
 
   // int ? a = 5 ;
   // int b = 2;
@@ -213,8 +200,6 @@ main() {
   // for (var f in z) {
   //   print(f);
   // }
-
-
 
     // print(project.calculate(20, 30)); // call function
 
