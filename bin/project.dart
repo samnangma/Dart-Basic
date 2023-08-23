@@ -1,17 +1,46 @@
+import 'dart:core';
+
+
 import 'package:project/project.dart' as project;
 
 // void main(List<String> arguments) {
 //   print('Hello world: ${project.calculate()}!');
 // }
 
+// public class
+
+// class Student{
+//
+//   var StudentName;
+//   var StudentAge;
+//   var StudnetSalary;
+//
+//   showInformation(){
+//     print("Name : $StudentName");
+//     print("Age : $StudentAge");
+//     print("Salary: $StudnetSalary");
+//   }
+//
+// }
+
+// private class
+
 class Student{
 
-  var StudentName;
+  var _StudentName;
   var StudentAge;
   var StudnetSalary;
 
+  get getStudentName {
+    return _StudentName;
+  }
+
+  set StudentName(String StudentName) {
+    this._StudentName = StudentName;
+  }
+
   showInformation(){
-    print("Name : $StudentName");
+    print("Name : $getStudentName");
     print("Age : $StudentAge");
     print("Salary: $StudnetSalary");
   }
@@ -20,12 +49,89 @@ class Student{
 
 main() {
 
-  Student stu = Student();
-  stu.StudentName='Samnang';
-  stu.StudentAge=23;
-  stu.StudnetSalary= 1000;
+  // Student stu = Student();
+  // stu.StudentName='Samnang';
+  // stu.StudentAge= 23;
+  // stu.StudnetSalary= 1000;
+  //
+  // stu.showInformation();
 
-  stu.showInformation();
+  //List and handle on CRUD
+
+  // var list = List<int>.filled(5,2);
+  // print(list);
+  //
+  // var list1 = [12,20,23,40,50];
+  // print(list1);
+  // print(list1[0]); // print index of Array
+  // print(list1[1]);
+  //
+  // List <int> list2 = [10,23,30,40,50];
+  // list2.forEach((n) => print(n));
+  //
+  // List<String> names = ["samanng",'Dara','Nara'];
+  // print(names.length); // print length of index of Array
+  //
+  // List<String> name= ["Bill", "Nara", "Sara"];
+  // name[1]="Da"; // insert this into array
+  // name[2]="Pa";
+  //
+  // print(name);
+  //
+  // var i = [20,34,10,90,80,100,200];
+  // print("this list before the replace $i");
+  // i.replaceRange(2, 4, [15,26,50]);
+  //
+  // print("this list after replace $i");
+  //
+  //
+  // // Mutable and Immutable list
+  //
+  // //Mutable List
+  // List<String> n = ['hello','hi','kj'];
+  // n[1]= 'World'; // possible to change
+  // n[2] = 'people';
+  // print(n);
+
+  //Immutabe list
+  // const List<String> g = ['III','GGG','SSS'];
+  // g[0] = 'AAA';
+  // g[1] = 'BBB'; // can not change the value the u assign when u use const
+  //
+  // print(g);
+
+
+
+  var evenList =[2,4,6,7,8,9];
+  print("This is List $evenList");
+  // evenList.add(1); // can add only one value in to list
+  evenList.addAll([10,20,30,40,50]);
+  print("The is list when We add the number into list $evenList");
+
+  var insertList = [1,23,45,67,89,90];
+  print("List before insert $insertList");
+  insertList.insert(0, 10); // insert one Value (index , value) into List 
+  insertList.insertAll(2, [30,20,40,50]);
+  print("List after insert all the value into index $insertList");
+
+  var removeList = [900,80,70,50,40];
+  print("List before not update it $removeList");
+  removeList.remove(40);
+  print("List After update it $removeList");
+
+  var removeList1 = [100,200,300,500,600];
+  print("List before not remove anything $removeList1" );
+  removeList1.removeAt(2); // Remove by index
+  print("List After remove the value $removeList1");
+
+
+
+
+
+
+
+
+
 
 
   // final Name = "Dara"; // one time value assign
@@ -111,8 +217,6 @@ main() {
 
 
     // print(project.calculate(20, 30)); // call function
-
-
 
 
 }
