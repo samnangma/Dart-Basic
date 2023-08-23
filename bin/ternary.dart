@@ -6,8 +6,6 @@ import 'dart:core';
 // the basic syntax is :
 // condition ? expression_if_true : expression_if_false;
 
-// syntax 2 : expression1 ?? experssiobn 2
-
 void main() {
   int num = 10;
   var isEven = num % 2 == 0 ? true : false;
