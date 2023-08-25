@@ -39,6 +39,8 @@
 class MyClass {
 
   String? _protectedProperty;
+
+
   void _protectedMethod() {
     print("This is a protected methods. ");
   }
@@ -51,8 +53,7 @@ class MyClass {
 
 class MySubclass extends MyClass {
   void accesssProtectedMember() {
-    _protectedProperty =
-        'New protected value'; // Protected members can be accesses in sub class
+    _protectedProperty ='New protected value'; // Protected members can be accesses in sub class
     _protectedMethod();
   }
 }
